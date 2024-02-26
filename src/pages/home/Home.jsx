@@ -38,6 +38,7 @@ export default function Home() {
         title={step == 1 || step == 2 ? "Suivant" : "Commencer le service !"}
         icon={step == 1 || step == 2 ? <FaArrowRight /> : ""}
         setStep={setStep}
+        step={step}
       />
     </div>
   );

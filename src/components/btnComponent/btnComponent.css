@@ -1,10 +1,11 @@
 .btnComponent {
-  background-color: #fff;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 101px;
+  padding: 2rem 0;
+  gap: 1.5rem;
 }
 .btnComponent button {
   width: 80%;
