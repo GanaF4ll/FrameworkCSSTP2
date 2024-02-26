@@ -8,12 +8,12 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "watch:scss": "npm-run-all --parallel btnComponent home headerComponent nav",
+    "watch:scss": "npm-run-all --parallel btnComponent home headerComponent nav userRecapList",
     "nav": "sass --watch ./src/components/NavComponents/Nav.scss ./src/components/NavComponents/Nav.css",
     "btnComponent": "sass --watch ./src/components/btnComponent/btnComponent.scss ./src/components/btnComponent/btnComponent.css",
     "headerComponent": "sass --watch ./src/components/headerComponent/headerComponent.scss ./src/components/headerComponent/headerComponent.css",
-    "home": "sass --watch ./src/pages/home/Home.scss ./src/pages/home/Home.css"
-
+    "home": "sass --watch ./src/pages/home/Home.scss ./src/pages/home/Home.css",
+    "userRecapList": "sass --watch ./src/pages/home/components/userRecapList/userRecapList.scss ./src/pages/home/components/userRecapList/userRecapList.css"
   },
   "dependencies": {
     "localforage": "^1.10.0",
