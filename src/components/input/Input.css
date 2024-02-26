@@ -1,0 +1,38 @@
+.flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.input-container {
+  width: 100%;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 10px;
+}
+.input-container div {
+  width: 95%;
+}
+.input-container label {
+  color: #ff6b40;
+  font-weight: bold;
+}
+.input-container .input {
+  width: 100%;
+  height: 50px;
+  top: 229px;
+  left: 22px;
+  border: 1px white;
+  border-radius: 7px;
+  background-color: lightgray;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=Input.css.map */

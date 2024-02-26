@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "watch:scss": "npm-run-all --parallel btnComponent home headerComponent nav userRecapList checkbox toggleSwitchComponent drawerComponent",
+    "watch:scss": "npm-run-all --parallel btnComponent home headerComponent nav userRecapList checkbox toggleSwitchComponent drawerComponent btnnumber pourboire input",
     "nav": "sass --watch ./src/components/NavComponents/Nav.scss ./src/components/NavComponents/Nav.css",
     "btnComponent": "sass --watch ./src/components/btnComponent/btnComponent.scss ./src/components/btnComponent/btnComponent.css",
     "drawerComponent": "sass --watch ./src/components/drawerComponent/drawerComponent.scss ./src/components/drawerComponent/drawerComponent.css",
@@ -16,7 +16,10 @@
     "headerComponent": "sass --watch ./src/components/headerComponent/headerComponent.scss ./src/components/headerComponent/headerComponent.css",
     "home": "sass --watch ./src/pages/home/Home.scss ./src/pages/home/Home.css",
     "checkbox": "sass --watch ./src/pages/home/components/checkbox/Checkbox.scss ./src/pages/home/components/checkbox/Checkbox.css",
-    "userRecapList": "sass --watch ./src/pages/home/components/userRecapList/userRecapList.scss ./src/pages/home/components/userRecapList/userRecapList.css"
+    "userRecapList": "sass --watch ./src/pages/home/components/userRecapList/userRecapList.scss ./src/pages/home/components/userRecapList/userRecapList.css",
+    "pourboire": "sass --watch ./src/pages/pourboire/Pourboire.scss  ./src/pages/pourboire/Pourboire.css",
+    "input": "sass --watch ./src/pages/pourboire/components/Input.scss  ./src/pages/pourboire/components/Input.css",
+    "btnnumber": "sass --watch ./src/pages/pourboire/components/btnNumber.scss  ./src/pages/pourboire/components/btnNumber.css"
   },
   "dependencies": {
     "localforage": "^1.10.0",
