@@ -1,3 +1,5 @@
+import React from "react";
+
 import { useState } from "react";
 import { FaArrowRight } from "react-icons/fa6";
 import Nav from "../../components/NavComponents/Nav";

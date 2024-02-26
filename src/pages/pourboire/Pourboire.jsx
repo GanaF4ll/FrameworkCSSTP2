@@ -1,16 +1,42 @@
-import { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./Pourboire.css";
 import HeaderComponent from "../../components/headerComponent/HeaderComponent";
-import BtnComponent from "../../components/btnComponent/BtnComponent";
 import Input from "../../components/input/Input";
 import BtnNumber from "./components/BtnNumber";
+import BtnPourboire from "./components/btnPourboire/BtnPourboire";
 
 const Pourboire = () => {
   const [pourboire, setPourboire] = useState("");
+  const [showNotification, setShowNotification] = useState(false);
+  const [step, setStep] = useState(1);
+  const notificationTimeout = useRef(null);
+
+  useEffect(() => {
+    return () => {
+      if (notificationTimeout.current) {
+        clearTimeout(notificationTimeout.current);
+      }
+    };
+  }, []);
 
   const handleBtnClick = (value) => {
     console.log(value);
     setPourboire(value);
+  };
+
+  const handleClick = () => {
+    console.log("Button was clicked");
+    setStep((prev) => (prev < 3 ? prev + 1 : prev));
+    setShowNotification(true);
+
+    if (notificationTimeout.current) {
+      clearTimeout(notificationTimeout.current);
+    }
+
+    notificationTimeout.current = setTimeout(() => {
+      setShowNotification(false);
+      notificationTimeout.current = null;
+    }, 2000);
   };
 
   return (
@@ -23,8 +49,11 @@ const Pourboire = () => {
         Montant du pourboire
       </Input>
       <BtnNumber onBtnClick={handleBtnClick} />
-      <BtnComponent title="Ajouter le pourboire" />
+
+      <BtnPourboire title="Ajouter le pourboire" onClick={handleClick} />
+      {showNotification && <div className="notif flex"></div>}
     </div>
   );
 };
+
 export default Pourboire;

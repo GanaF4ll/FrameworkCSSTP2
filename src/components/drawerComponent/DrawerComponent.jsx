@@ -1,3 +1,5 @@
+import React from "react";
+
 import closeIcon from "../../assets/icons/close_icon.png";
 import "./drawerComponent.css";
 export default function DrawerComponent() {

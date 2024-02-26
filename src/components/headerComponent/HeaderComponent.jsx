@@ -1,3 +1,5 @@
+import React from "react";
+
 import { DateTime } from "luxon";
 import hamburgerIcon from "../../assets/icons/hamburgerIcon.svg";
 import "./headerComponent.css";
