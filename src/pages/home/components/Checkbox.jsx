@@ -9,7 +9,10 @@ const Checkbox = () => {
         <img src={icone} alt="icone" className="icone" />
       </div>
       <div className="main">TEST TEST</div>
-      <div className="right">ZZ</div>
+      <div className="right">
+        <input type="checkbox" id="checkbox" className="checkbox" />
+        <label htmlFor="checkbox"></label>
+      </div>
     </div>
   );
 };
