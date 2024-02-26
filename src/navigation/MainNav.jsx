@@ -6,7 +6,7 @@ const MainNav = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
-  },
+  }
 ]);
 
 export default MainNav;
