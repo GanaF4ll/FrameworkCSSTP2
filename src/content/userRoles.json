@@ -1,0 +1,46 @@
+[
+  {
+    "name": "John Doe",
+    "role": "cuisine"
+  },
+  {
+    "name": "Peter Parker",
+    "role": "salle"
+  },
+  {
+    "name": "Clark Kent",
+    "role": "cuisine"
+  },
+  {
+    "name": "Bruce Wayne",
+    "role": "salle"
+  },
+  {
+    "name": "Tony Stark",
+    "role": "cuisine"
+  },
+  {
+    "name": "Steve Rogers",
+    "role": "salle"
+  },
+  {
+    "name": "Natasha Romanoff",
+    "role": "cuisine"
+  },
+  {
+    "name": "Wanda Maximoff",
+    "role": "salle"
+  },
+  {
+    "name": "Thor Odinson",
+    "role": "cuisine"
+  },
+  {
+    "name": "Loki Laufeyson",
+    "role": "salle"
+  },
+  {
+    "name": "Barry Allen",
+    "role": "cuisine"
+  }
+]
