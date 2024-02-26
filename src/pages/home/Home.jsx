@@ -10,21 +10,22 @@ import Checkbox from "./components/checkbox/Checkbox";
 import UserRecapList from "./components/userRecapList/UserRecapList";
 export default function Home() {
   const [step, setStep] = useState(1);
-  console.log(step);
+
   return (
     <div className="homeContainer">
       <HeaderComponent>
-        Qui travaille <br /> aujourd’hui ?
+        {(step == 1 || step == 2) && "Qui travaille aujourd’hui ?"}
+        {step == 3 && "Récapitulatif  du service"}
       </HeaderComponent>
       <Nav step={step} setStep={setStep} />
       <div className="homeMain">
         {step == 1 &&
           userChecked.map((user, index) => {
-            return <Checkbox key={index} name={user.name} role={user.role} />;
+            return <Checkbox key={index} name={user.name} index={index} />;
           })}
         {step == 2 &&
           userChecked.map((user, index) => {
-            return <Checkbox key={index} name={user.name} role={user.role} />;
+            return <Checkbox key={index} name={user.name} index={index} />;
           })}
         {step == 3 &&
           userRoles.map((user, index) => {
@@ -33,7 +34,11 @@ export default function Home() {
             );
           })}
       </div>
-      <BtnComponent title="Suivant" icon={<FaArrowRight />} setStep={setStep} />
+      <BtnComponent
+        title={step == 1 || step == 2 ? "Suivant" : "Commencer le service !"}
+        icon={step == 1 || step == 2 ? <FaArrowRight /> : ""}
+        setStep={setStep}
+      />
     </div>
   );
 }
