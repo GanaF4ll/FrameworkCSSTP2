@@ -1,0 +1,60 @@
+.drawerContainer {
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  width: 60%;
+  right: 0;
+  z-index: 99999999;
+  transform: translateX(100%);
+  .slideIn {
+    animation: 1s forwards slideIn;
+  }
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  .slideOut {
+    animation: 1s forwards slideOut;
+  }
+  @keyframes slideOut {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+
+  .closeIconContainer {
+    display: flex;
+    justify-content: flex-end;
+    height: 20%;
+    padding: 1rem;
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .listContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    div {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      border-bottom: 1px solid #e0e0e0;
+      height: 4rem;
+      p {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 0em;
+      }
+    }
+  }
+}

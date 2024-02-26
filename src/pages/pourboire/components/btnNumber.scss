@@ -1,0 +1,20 @@
+@import "../../../constants/COLORS";
+@import "../../../constants/FLEXBOX";
+
+.big-container {
+  width: 100%;
+  margin: 2rem 0;
+  .btn-container {
+    margin: 0 2rem;
+    .btn-number {
+      border: 1px solid $primaryColor;
+      width: 88px;
+      height: 37px;
+      top: 395px;
+      left: 49px;
+      border-radius: 18.5px;
+
+      color: $primaryColor;
+    }
+  }
+}
