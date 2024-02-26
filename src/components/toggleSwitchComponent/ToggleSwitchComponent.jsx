@@ -1,3 +1,5 @@
+import React from "react";
+
 import "./toggleSwitchComponent.css";
 
 export default function ToggleSwitchComponent() {

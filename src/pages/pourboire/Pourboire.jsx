@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { React, useState } from "react";
 import "./Pourboire.css";
 import HeaderComponent from "../../components/headerComponent/HeaderComponent";
 import BtnComponent from "../../components/btnComponent/BtnComponent";
