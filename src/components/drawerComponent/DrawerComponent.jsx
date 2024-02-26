@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 import { useDispatch, useSelector } from "react-redux";
+=======
+import React from "react";
+
+>>>>>>> 25f7d213156ac0a620b91a4d66f855fc824094fd
 import closeIcon from "../../assets/icons/close_icon.png";
 import image_1 from "../../assets/icons/eos-icons_content-modified.png";
 import image_2 from "../../assets/icons/ic_outline-log-in.png";
