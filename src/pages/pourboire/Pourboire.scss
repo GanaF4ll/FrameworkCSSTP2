@@ -4,4 +4,22 @@
 
 .pourboire-container {
   padding: $padding;
+  .notif {
+    border-bottom: 1px solid #33cc33;
+    background-color: $secondaryColor;
+    width: 356px;
+    height: 55px;
+    top: 40px;
+    left: 36px;
+    border-radius: 8px;
+    text-align: center;
+    color: #33cc33;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 }
