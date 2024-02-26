@@ -8,7 +8,9 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "watch:scss": "npm-run-all --parallel"
+    "watch:scss": "npm-run-all --parallel nav",
+    "nav": "sass --watch ./src/components/NavComponents/Nav.scss ./src/components/NavComponents/Nav.css",
+    "flexbox": "sass --watch ./src/constants/FLEXBOX.scss ./src/components/NavComponents/Nav.css"
   },
   "dependencies": {
     "localforage": "^1.10.0",
@@ -18,6 +20,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
     "react-router-dom": "^6.22.1",
+    "sass": "^1.71.1",
     "sort-by": "^1.2.0"
   },
   "devDependencies": {

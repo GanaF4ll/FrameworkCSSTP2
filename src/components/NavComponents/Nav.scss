@@ -1,0 +1,24 @@
+@import "../../constants/_COLORS.scss";
+@import "../../constants/FLEXBOX.scss";
+
+.navbar {
+  .btn-nav {
+    border: 1px solid $primaryColor;
+    margin-left: 4px;
+    margin-right: 5px;
+    border: 1px solid white;
+    border-radius: 3px;
+    background-color: white;
+    color: gray;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    width: 50px;
+    height: 20px;
+  }
+}
+
+.navbar .selected {
+  border: 1px solid $primaryColor;
+  background-color: lightgray;
+  color: black;
+}
