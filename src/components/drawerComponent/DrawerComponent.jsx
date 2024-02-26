@@ -1,10 +1,24 @@
+import { useDispatch, useSelector } from "react-redux";
 import closeIcon from "../../assets/icons/close_icon.png";
+import image_1 from "../../assets/icons/eos-icons_content-modified.png";
+import image_2 from "../../assets/icons/ic_outline-log-in.png";
+import { setIsDrawerReducer } from "../../redux/reducers/drawerReducer";
 import "./drawerComponent.css";
+
 export default function DrawerComponent() {
+  const isDrawerVisible = useSelector(
+    (state) => state.drawerReducer.isDrawerVisible
+  );
+  const dispatch = useDispatch();
+  const handleCloseDrawer = () => {
+    dispatch(setIsDrawerReducer(false));
+  };
   return (
-    <div className="drawerContainer">
+    <div
+      className={`drawerContainer ${isDrawerVisible ? "slideIn" : "slideOut"}`}
+    >
       <div className="closeIconContainer">
-        <img src={closeIcon} alt="fermer" />
+        <img src={closeIcon} alt="fermer" onClick={() => handleCloseDrawer()} />
       </div>
       <div className="listContainer">
         <div>
@@ -44,6 +58,16 @@ export default function DrawerComponent() {
             </defs>
           </svg>
           <p>Administrateur</p>
+        </div>
+      </div>
+      <div className="bottomContainer">
+        <div>
+          <p>Modifier le service</p>
+          <img src={image_1} alt="image" />
+        </div>
+        <div>
+          <p>Fermer le service</p>
+          <img src={image_2} alt="image" />
         </div>
       </div>
     </div>
