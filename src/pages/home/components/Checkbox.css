@@ -18,10 +18,11 @@
   margin-bottom: 10px;
   border: 1px solid lightgray;
   border-radius: 10px;
-  width: 384px;
+  width: 95%;
   height: 76px;
   top: 277px;
   left: 21px;
+  margin: 0.5rem auto;
 }
 .checkbox-container .left {
   flex: 1;
