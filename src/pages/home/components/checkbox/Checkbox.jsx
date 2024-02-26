@@ -1,7 +1,7 @@
 import icone from "../../../../assets/icons/icone.svg";
 import "./Checkbox.css";
 
-const Checkbox = ({ name, checked }) => {
+const Checkbox = ({ name, index }) => {
   return (
     <div className="checkbox-container">
       <div className="left flex justify-content-center">
@@ -9,13 +9,8 @@ const Checkbox = ({ name, checked }) => {
       </div>
       <div className="main flex justify-content-center">{name}</div>
       <div className="right flex justify-content-center">
-        <input
-          type="checkbox"
-          id="checkbox"
-          className="checkbox"
-          checked={checked}
-        />
-        <label htmlFor="checkbox"></label>
+        <input type="checkbox" id={index} className="checkbox" />
+        <label htmlFor={index}></label>
       </div>
     </div>
   );
