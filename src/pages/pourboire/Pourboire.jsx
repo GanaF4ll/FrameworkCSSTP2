@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Pourboire.css";
 import HeaderComponent from "../../components/headerComponent/HeaderComponent";
+import BtnComponent from "../../components/btnComponent/BtnComponent";
 import Input from "../../components/input/Input";
 import BtnNumber from "./components/BtnNumber";
 
@@ -22,6 +23,7 @@ const Pourboire = () => {
         Montant du pourboire
       </Input>
       <BtnNumber onBtnClick={handleBtnClick} />
+      <BtnComponent title="Ajouter le pourboire" />
     </div>
   );
 };
