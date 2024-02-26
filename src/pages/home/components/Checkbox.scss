@@ -6,7 +6,7 @@
   align-items: center;
   margin-bottom: 10px;
   border: 1px solid lightgray;
-  border-radius: 4px;
+  border-radius: 10px;
   width: 384px;
   height: 76px;
   top: 277px;
@@ -14,9 +14,10 @@
 
   .left {
     flex: 1;
+    padding-left: 15px;
     .icone {
-      width: 27.19px;
-      height: 27.19px;
+      width: 45px;
+      height: 45px;
       top: 300.5px;
       left: 48.38px;
       padding: 0.94px, 1.83px, 0.61px, 1.83px;
@@ -25,8 +26,6 @@
 
   .main {
     flex: 8;
-    display: flex;
-    justify-content: center;
     font-family: Arial;
     font-size: 17px;
     font-weight: 700;
@@ -34,6 +33,7 @@
 
   .right {
     flex: 1;
+    padding-right: 20px;
     label {
       display: block;
       width: 22px;
