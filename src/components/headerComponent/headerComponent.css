@@ -1,0 +1,21 @@
+.headerContainer h2 {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #999999;
+}
+.headerContainer div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.headerContainer div h1 {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: -0.01em;
+}
+
+/*# sourceMappingURL=headerComponent.css.map */

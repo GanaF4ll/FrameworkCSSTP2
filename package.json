@@ -8,14 +8,16 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "watch:scss": "npm-run-all --parallel nav btnComponent home",
+    "watch:scss": "npm-run-all --parallel btnComponent home headerComponent nav",
     "nav": "sass --watch ./src/components/NavComponents/Nav.scss ./src/components/NavComponents/Nav.css",
     "btnComponent": "sass --watch ./src/components/btnComponent/btnComponent.scss ./src/components/btnComponent/btnComponent.css",
+    "headerComponent": "sass --watch ./src/components/headerComponent/headerComponent.scss ./src/components/headerComponent/headerComponent.css",
     "home": "sass --watch ./src/pages/home/Home.scss ./src/pages/home/Home.css"
 
   },
   "dependencies": {
     "localforage": "^1.10.0",
+    "luxon": "^3.4.4",
     "match-sorter": "^6.3.4",
     "npm-run-all": "^4.1.5",
     "react": "^18.2.0",
