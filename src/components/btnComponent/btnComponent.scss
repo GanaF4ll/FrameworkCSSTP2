@@ -8,6 +8,30 @@
   padding: 2rem 0;
   gap: 1.5rem;
   // btn
+  a {
+    width: 80%;
+    height: 52px;
+    border-radius: 25px;
+    background-color: $btnColor;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    gap: 0.5rem;
+    text-decoration: none;
+    cursor: pointer;
+    color: $primaryColor;
+    svg {
+      color: $primaryColor;
+    }
+  }
   button {
     width: 80%;
     height: 52px;
