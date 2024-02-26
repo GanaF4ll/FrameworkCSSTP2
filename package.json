@@ -13,7 +13,7 @@
     "btnComponent": "sass --watch ./src/components/btnComponent/btnComponent.scss ./src/components/btnComponent/btnComponent.css",
     "headerComponent": "sass --watch ./src/components/headerComponent/headerComponent.scss ./src/components/headerComponent/headerComponent.css",
     "home": "sass --watch ./src/pages/home/Home.scss ./src/pages/home/Home.css",
-    "checkbox": "sass --watch ./src/pages/home/components/Checkbox.scss ./src/pages/home/components/Checkbox.css",
+    "checkbox": "sass --watch ./src/pages/home/components/checkbox/Checkbox.scss ./src/pages/home/components/checkbox/Checkbox.css",
     "userRecapList": "sass --watch ./src/pages/home/components/userRecapList/userRecapList.scss ./src/pages/home/components/userRecapList/userRecapList.css"
   },
   "dependencies": {
