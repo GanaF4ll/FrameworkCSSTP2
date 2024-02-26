@@ -1,0 +1,37 @@
+.btnComponent {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 101px;
+}
+.btnComponent button {
+  width: 80%;
+  height: 52px;
+  border-radius: 25px;
+  background-color: rgba(255, 107, 64, 0.21);
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  gap: 0.5rem;
+  cursor: pointer;
+  color: #ff6b40;
+}
+.btnComponent button svg {
+  color: #ff6b40;
+}
+
+/*# sourceMappingURL=btnComponent.css.map */
