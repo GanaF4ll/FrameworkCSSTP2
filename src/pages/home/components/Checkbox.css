@@ -1,0 +1,31 @@
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  width: 384px;
+  height: 76px;
+  top: 277px;
+  left: 21px;
+}
+.checkbox-container .left {
+  flex: 1;
+}
+.checkbox-container .left .icone {
+  width: 27.19px;
+  height: 27.19px;
+  top: 300.5px;
+  left: 48.38px;
+  padding: 0.94px, 1.83px, 0.61px, 1.83px;
+}
+.checkbox-container .main {
+  flex: 8;
+  display: flex;
+  justify-content: center;
+}
+.checkbox-container .right {
+  flex: 1;
+}
+
+/*# sourceMappingURL=Checkbox.css.map */
