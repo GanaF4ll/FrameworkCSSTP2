@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "checked": false
+  },
+  {
+    "id": 2,
+    "name": "Jane Doe",
+    "checked": false
+  },
+  {
+    "id": 3,
+    "name": "Jim Doe",
+    "checked": false
+  },
+  {
+    "id": 4,
+    "name": "Jill Doe",
+    "checked": false
+  },
+  {
+    "id": 5,
+    "name": "Jack Doe",
+    "checked": false
+  },
+  {
+    "id": 6,
+    "name": "Jenny Doe",
+    "checked": false
+  },
+  {
+    "id": 7,
+    "name": "Jesse Doe",
+    "checked": false
+  },
+  {
+    "id": 8,
+    "name": "Jasmine Doe",
+    "checked": false
+  },
+  {
+    "id": 9,
+    "name": "Jared Doe",
+    "checked": false
+  },
+  {
+    "id": 10,
+    "name": "Jocelyn Doe",
+    "checked": false
+  },
+  {
+    "id": 11,
+    "name": "Jasper Doe",
+    "checked": false
+  },
+  {
+    "id": 12,
+    "name": "Jenna Doe",
+    "checked": false
+  },
+  {
+    "id": 13,
+    "name": "Jared Doe",
+    "checked": false
+  },
+  {
+    "id": 14,
+    "name": "Jocelyn Doe",
+    "checked": false
+  },
+  {
+    "id": 15,
+    "name": "Jasper Doe",
+    "checked": false
+  },
+  {
+    "id": 16,
+    "name": "Jenna Doe",
+    "checked": false
+  },
+  {
+    "id": 17,
+    "name": "Jared Doe",
+    "checked": false
+  },
+  {
+    "id": 18,
+    "name": "Jocelyn Doe",
+    "checked": false
+  },
+  {
+    "id": 19,
+    "name": "Jasper Doe",
+    "checked": false
+  },
+  {
+    "id": 20,
+    "name": "Jenna Doe",
+    "checked": false
+  }
+]

@@ -1,0 +1,11 @@
+.homeContainer {
+  padding: 2rem 1rem 0 1rem;
+  height: 100vh;
+}
+.homeContainer .homeMain {
+  max-height: 25rem;
+  min-height: 20rem;
+  overflow: auto;
+}
+
+/*# sourceMappingURL=Home.css.map */
