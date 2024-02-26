@@ -5,6 +5,7 @@ import BtnComponent from "../../components/btnComponent/BtnComponent";
 import HeaderComponent from "../../components/headerComponent/HeaderComponent";
 import userRoles from "../../content/userRoles.json";
 import "./Home.css";
+import Checkbox from "./components/Checkbox";
 import UserRecapList from "./components/userRecapList/UserRecapList";
 export default function Home() {
   const [step, setStep] = useState(1);

@@ -1,0 +1,73 @@
+@import "../../../constants/COLORS";
+@import "../../../constants/FLEXBOX";
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  width: 95%;
+  height: 76px;
+  top: 277px;
+  left: 21px;
+  margin: 0.5rem auto;
+
+  .left {
+    flex: 1;
+    padding-left: 15px;
+    .icone {
+      width: 45px;
+      height: 45px;
+      top: 300.5px;
+      left: 48.38px;
+      padding: 0.94px, 1.83px, 0.61px, 1.83px;
+    }
+  }
+
+  .main {
+    flex: 8;
+    font-family: Arial;
+    font-size: 17px;
+    font-weight: 700;
+  }
+
+  .right {
+    flex: 1;
+    padding-right: 20px;
+    label {
+      display: block;
+      width: 22px;
+      height: 22px;
+      border: 0.5px solid gray;
+      border-radius: 4px;
+      position: relative;
+      cursor: pointer;
+
+      &:after {
+        content: "✔";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        color: white;
+        font-size: 16px;
+      }
+    }
+
+    input[type="checkbox"] {
+      visibility: hidden;
+
+      &:checked + label {
+        background-color: $primaryColor;
+        border-color: $primaryColor;
+
+        &:after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
