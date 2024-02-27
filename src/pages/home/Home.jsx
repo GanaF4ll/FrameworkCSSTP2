@@ -1,5 +1,8 @@
+import React from "react";
+
 import { useState } from "react";
 import { FaArrowRight } from "react-icons/fa6";
+import { useSelector } from "react-redux";
 import Nav from "../../components/NavComponents/Nav";
 import BtnComponent from "../../components/btnComponent/BtnComponent";
 import HeaderComponent from "../../components/headerComponent/HeaderComponent";
@@ -10,7 +13,6 @@ import Checkbox from "./components/checkbox/Checkbox";
 import UserRecapList from "./components/userRecapList/UserRecapList";
 export default function Home() {
   const [step, setStep] = useState(1);
-
   return (
     <div className="homeContainer">
       <HeaderComponent>
